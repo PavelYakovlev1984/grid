@@ -1,3 +1,10 @@
+.main {
+  grid-area: main;
+  padding: 30px 15px;
+  display: grid;
+  grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
+}
+
 .wrapper {
   min-height: 100%;
   display: grid;
@@ -11,8 +18,9 @@
 .header {
   grid-area: header;
   padding: 15px;
-  background-color: red;
+  background-color: #794f45;
   display: grid;
+  align-items: center;
   grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
 
   &__logo {
@@ -24,8 +32,6 @@
   }
 
   &__menu {
-    grid-column: 3 / 4;
-    grid-column: 3 / 4;
     grid-column: 3 / 4;
   }
 
